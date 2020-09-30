@@ -11,9 +11,35 @@
 
 
 //Write a function to return the route to her home
+
+
 function find_Route(number){
-    
-    return null;
+    let div;
+    let sum = 0;
+    var rem=0;
+    if(number < 0) 
+        return null;
+    else if (number===0) {
+            return 0;
+        } 
+    else{
+       rem = number % 10;
+            div = Math.floor(number / 10);
+            sum = rem + div;
+     return sum;
 }
+}
+find_Route(number);
+
+// function sumDigits(number) {
+//     let sum = 0;
+//     while (number) {
+//         digit = number % 10;
+//         sum += digit;
+//         number = (number - digit) / 10;
+//     }
+//     return sum;
+// }
+// find_Route(number);
 
 //Run SpecRunner.html to check the Test Case.
